@@ -1,12 +1,112 @@
+
 <!DOCTYPE html>
- <html lang="pl-PL">
- <html>
-    <head>
-    <meta charset="utf-8">
-        <title> </title>
-        </head>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tabela</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #000000; /* Tło całej tabeli */
+        }
+
+        th, td {
+            border: 10px solid #CC241C; /* Obramowanie 1 piksel szerokości, czarne */
+            padding: 8px;
+            text-align: left;
+            background-color: #3ab9e6; /* Jasnoniebieskie tło */
+        }
+
+        th.center, td.center {
+            text-align: center;
+            background-color: #02b5f6; /* Jasnoniebieskie tło */
+        }
+
+        th.header-bar {
+            border: 1px solid #000000;
+            background-color: #00FF00; /* Kolor tła paska */
+            text-align: center;
+        }
+
+        td.no-border {
+            border: none; 
+        }
+
+        /* Kolorowanie odpowiednich komórek */
+        td.model, td.rdzenie, td.taktowanie, td.gniazdo, td.firma, th.header-bar {
+            color: red; /* Jasnoniebieski kolor tekstu */
+        }
+
+        td.procesor, td.intel-amd {
+            color: black; /* Zielony kolor tekstu */
+        }
+    </style>
+</head>
+
 <body>
-    Tutaj będzie tabela <br>
-    <A href="index.html">Wróć</A>
+<table>
+    <tr>
+        <th colspan="5" class="header-bar"><b>Dane komputerowe - Bartek Kozak 2G1</b></th>
+    </tr>
+    <tr>
+        <th class="model" style="color: white;">Modele procesorów</th>
+        <th class="rdzenie" style="color: white;">Taktowanie procesorów</th>
+        <th class="taktowanie" style="color: white;">Liczba rdzeni</th>
+        <th class="gniazdo" style="color: white;">Chipset</th>
+        <th class="firma" style="color: white;">pobór prądu<th>
+    </tr>
+    <tr>
+        <td class="procesor">Intel Core i9-11900K</td>
+        <td class="rdzenie">3.5GHz</td>
+        <td class="taktowanie">8</td>
+        <td class="gniazdo">Z590</td>
+        <td class="firma">125W</td>
+    </tr>
+    <tr>
+        <td class="procesor">Intel Core i7-11700K</td>
+        <td class="rdzenie">3.6GHz</td>
+        <td class="taktowanie">8</td>
+        <td class="gniazdo">Z590</td>
+        <td class="firma">125W</td>
+    </tr>
+    <tr>
+        <td class="procesor">Intel Core i5-11600K</td>
+        <td class="rdzenie">3.9GHz</td>
+        <td class="taktowanie">6</td>
+        <td class="gniazdo">Z590</td>
+        <td class="firma">125W</td>
+    </tr>
+    <tr>
+        <td class="procesor">AMD Ryzen 9 5950X</td>
+        <td class="rdzenie">3.4GHz</td>
+        <td class="taktowanie">16</td>
+        <td class="gniazdo">B550</td>
+        <td class="firma">105W</td>
+    </tr>
+    <tr>
+        <td class="procesor">AMD Ryzen 7 5800X</td>
+        <td class="rdzenie">3.4GHz</td>
+        <td class="taktowanie">8</td>
+        <td class="gniazdo">B550</td>
+        <td class="firma">105W</td>
+    </tr>
+    <tr>
+        <td class="procesor">AMD Ryzen 5 5600X</td>
+        <td class="rdzenie">3.7GHz</td>
+        <td class="taktowanie">6</td>
+        <td class="gniazdo">B550</td>
+        <td class="firma">65W</td>
+    </tr>
+    <tr>
+        <th colspan="5" class="center" style="background-color: red; color: black "><b>Dane Komputerowe</b></th>
+    </tr>
+</table>
+<br><br>
+<i><a href="index.html"><font color="red" size="35">Wróć na główną</font></a></i>
 </body>
+
 </html>
